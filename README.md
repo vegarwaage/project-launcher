@@ -73,7 +73,7 @@ The script remains in this project folder if you want to reinstall later.
 
 Test the project list without interaction:
 ```bash
-./test-cc.sh
+./test-ccode.sh
 ```
 
 Test the interactive menu without launching Claude:
