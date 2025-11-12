@@ -1,15 +1,15 @@
-# Project Launcher (cc)
+# Project Launcher (ccode)
 
 Quick launcher for Claude Code in project directories.
 
 ## What it does
 
-Type `cc` in any terminal to get an interactive menu of your projects. Select a project and Claude Code launches in that directory within the same terminal window.
+Type `ccode` in any terminal to get an interactive menu of your projects. Select a project and Claude Code launches in that directory within the same terminal window.
 
 ## Usage
 
 ```bash
-cc
+ccode
 ```
 
 You'll see a numbered list:
@@ -38,17 +38,17 @@ It uses bash's built-in `select` command for the menu - no external dependencies
 
 1. Make the script executable:
    ```bash
-   chmod +x ~/Developer/project-launcher/cc
+   chmod +x ~/Developer/project-launcher/ccode
    ```
 
 2. Create a symlink to your PATH:
    ```bash
-   ln -s ~/Developer/project-launcher/cc /usr/local/bin/cc
+   ln -s ~/Developer/project-launcher/ccode /usr/local/bin/ccode
    ```
 
 3. Test it:
    ```bash
-   cc
+   ccode
    ```
 
 The script stays in this project folder under version control, while the symlink makes it accessible from anywhere.
@@ -57,7 +57,7 @@ The script stays in this project folder under version control, while the symlink
 
 Remove the symlink:
 ```bash
-rm /usr/local/bin/cc
+rm /usr/local/bin/ccode
 ```
 
 The script remains in this project folder if you want to reinstall later.

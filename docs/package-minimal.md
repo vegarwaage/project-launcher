@@ -1,4 +1,4 @@
-# cc (Claude Code Project Launcher)
+# ccode (Claude Code Project Launcher)
 
 **Installed:** 2025-11-12
 **Version:** 1.0.0
@@ -6,24 +6,24 @@
 **Category:** Development
 
 ## Purpose
-Quick launcher for Claude Code that displays an interactive menu of project directories. Type `cc` in any terminal to select and launch Claude Code in your Device-Management or Developer projects.
+Quick launcher for Claude Code that displays an interactive menu of project directories. Type `ccode` in any terminal to select and launch Claude Code in your Device-Management or Developer projects.
 
 ## Installation
 ```bash
 # Make script executable
-chmod +x ~/Developer/project-launcher/cc
+chmod +x ~/Developer/project-launcher/ccode
 
 # Create symlink to PATH
-ln -s ~/Developer/project-launcher/cc /usr/local/bin/cc
+ln -s ~/Developer/project-launcher/ccode /usr/local/bin/ccode
 ```
 
 ## Removal
 ```bash
 # Remove symlink
-rm /usr/local/bin/cc
+rm /usr/local/bin/ccode
 ```
 
-**Impact:** Cannot use `cc` command to launch Claude Code. Script remains in project folder for reinstallation.
+**Impact:** Cannot use `ccode` command to launch Claude Code. Script remains in project folder for reinstallation.
 
 ## Installation Notes
 - Zero dependencies - uses bash built-ins only

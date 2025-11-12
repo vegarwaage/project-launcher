@@ -5,11 +5,11 @@
 
 ## Overview
 
-A simple bash script named `cc` that provides an interactive menu to launch Claude Code in project directories. Zero dependencies, uses only bash built-ins.
+A simple bash script named `ccode` that provides an interactive menu to launch Claude Code in project directories. Zero dependencies, uses only bash built-ins.
 
 ## User Experience
 
-1. User types `cc` in any terminal
+1. User types `ccode` in any terminal
 2. Script displays numbered list of projects
 3. User types a number and presses Enter
 4. Claude Code launches in selected directory within the same terminal window
@@ -36,7 +36,7 @@ Select a project:
 **File Structure:**
 ```
 ~/Developer/project-launcher/
-├── cc                          # Main executable script
+├── ccode                       # Main executable script
 ├── README.md                   # User documentation
 └── docs/
     ├── plans/                  # This design doc
@@ -58,8 +58,8 @@ Select a project:
 
 **Method:** Symlink from project to PATH
 
-1. Make script executable: `chmod +x ~/Developer/project-launcher/cc`
-2. Create symlink: `ln -s ~/Developer/project-launcher/cc /usr/local/bin/cc`
+1. Make script executable: `chmod +x ~/Developer/project-launcher/ccode`
+2. Create symlink: `ln -s ~/Developer/project-launcher/ccode /usr/local/bin/ccode`
 3. Document in Device Management (5-step workflow)
 
 **Benefits:**
@@ -71,8 +71,8 @@ Select a project:
 ## Device Management Integration
 
 **What gets tracked:**
-- Symlink: `/usr/local/bin/cc`
-- Points to: `~/Developer/project-launcher/cc`
+- Symlink: `/usr/local/bin/ccode`
+- Points to: `~/Developer/project-launcher/ccode`
 - Category: Development Tools / CLI Utilities
 - Installation type: Global (command-line utility)
 - Dependencies: None
